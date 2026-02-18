@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url('finalbg.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex; /* This creates the side-by-side layout */
+  width: 80%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent effect */
+  backdrop-filter: blur(10px); /* Modern "glass" look */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.logo-side, .form-side {
+  flex: 1; /* Makes both sides equal width */
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
