@@ -1,60 +1,77 @@
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
   background: url('finalbg.png') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+
 
 .main-container {
-  display: flex; /* This creates the side-by-side layout */
-  width: 80%;
-  max-width: 900px;
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent effect */
-  backdrop-filter: blur(10px); /* Modern "glass" look */
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  width: 70%;           
+  max-width: 800px;      
+  min-height: 400px;
+  background: url('BlankChalk.png') no-repeat center center; 
+  background-size: 100% 100%; 
+  border-radius: 15px;
+  padding: 40px;        
+  box-shadow: 0 15px 45px rgba(0,0,0,0.6); 
 }
 
-.logo-side, .form-side {
-  flex: 1; /* Makes both sides equal width */
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.logo-side {
+  flex: 1;
+  text-align: center;
 }
 
 .main-logo {
-  max-width: 100%;
+  max-width: 250px;      
   height: auto;
 }
 
+.form-side {
+  flex: 1.2;             
+  padding-left: 20px;
+}
+
+
+.form-side h2, 
+.form-side label {
+  color: #f0f0f0;      
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.2);
+  margin-bottom: 5px;
+}
+
 .input-group {
-  margin-bottom: 15px;
-  width: 100%;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  border: 1px solid #777;
+  border-radius: 4px;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.9); 
 }
 
 button {
-  width: 100%;
-  padding: 12px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
   background-color: #333;
   color: white;
-  border: none;
-  border-radius: 5px;
+  padding: 8px 20px;
+  border: 1px solid #666;
   cursor: pointer;
-  font-weight: bold;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #444;
 }
