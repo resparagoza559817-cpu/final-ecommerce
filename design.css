@@ -75,3 +75,18 @@ button {
 button:hover {
   background-color: #444;
 }
+
+#logoutBtn {
+  margin-top: 20px;
+  background-color:rgb(36, 205, 56);
+  border: 2px solid #fff;
+  color: white;
+  padding: 10px 25px;
+  font-family:"Comic Sans MS", cursive;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#logoutBtn:hover {
+  background-color: #a33232;
+}
