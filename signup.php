@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['signup'])) {
 <body>
     <div class="main-container">
         <div class="logo-side">
-            <img src="logowogo.png" alt="Logo" class="main-logo">
+            <img src="logowogo2.png" alt="Logo" class="main-logo">
         </div>
         <div class="form-side">
             <form method="POST">
