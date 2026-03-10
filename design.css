@@ -280,7 +280,6 @@ button:hover {
 
 .btn-outline {
     width: 45px; 
-    border: 3px solid rgb(36, 205, 56);
     border-radius: 5px;
     background: rgba(0,0,0,0.2);
 }
@@ -294,4 +293,76 @@ button:hover {
          1px -1px 0 #000,
         -1px  1px 0 #000,
          1px  1px 0 #000;
+}
+
+/* DETAIL VIEW STYLES */
+.detail-container {
+    padding: 50px;
+    justify-content: flex-start;
+}
+
+.detail-layout {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+}
+
+.detail-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.detail-frame {
+    background: #000;
+    border: 8px solid #5d3a1a; /* Wooden look */
+    width: 160px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-frame img {
+    max-width: 120px;
+}
+
+.go-back-btn {
+    cursor: pointer;
+    text-align: center;
+}
+
+.go-back-btn img {
+    width: 80px;
+}
+
+.go-back-btn p {
+    color: white;
+    margin-top: 5px;
+    font-size: 1.2em;
+}
+
+.detail-right {
+    flex: 1;
+}
+
+.description-box {
+    margin-top: 30px;
+}
+
+.description-box p {
+    font-family: "Times New Roman", serif;
+    font-size: 3.5em;
+    color: white;
+}
+
+/* Sidebar Fixes */
+.large-nav-icon {
+    width: 130px !important;
+}
+
+.btn-outline {
+    border: none !important; /* Removes green outline as requested */
+    background: transparent !important;
 }
